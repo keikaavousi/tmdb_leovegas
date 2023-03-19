@@ -37,7 +37,7 @@ const Modal = ({ children, defaultOpened = false }, ref) => {
 
 	return createPortal(
 		isOpen ? (
-			<div className={`modal`}>
+			<div className={`modal`} data-testid='modal'>
 				<div className='modal-overlay' onClick={close} />
 
 				<div className='modal-body'>
